@@ -88,6 +88,8 @@ del people[0]
 
 print(people)
 
+print(len(people))
+
 
 
 
