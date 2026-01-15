@@ -1,13 +1,7 @@
-games = ['dark souls', 'roblox', 'league of legends', 'hollow knight', 'metal gear rising']
+cars = ['audi', 'bmw', 'subaru', 'toyota']
 
-print(games)
-
-print(sorted(games))
-
-print(sorted(games, reverse=True))
-
-games.reverse()
-
-print(games)
-
-print(len(games))
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
