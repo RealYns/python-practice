@@ -6,8 +6,5 @@ glossary = {
     'Dictionaries' : 'Used to store a limitless amount variables.' ,
 }
 
-print("For :\n" + glossary['For'])
-print("\nIf :\n" + glossary['If'])
-print("\nLists :\n" + glossary['Lists'])
-print("\nPrint :\n" + glossary['Print'])
-print("\nDictionaries :\n" + glossary['Dictionaries'])
+for func in glossary.keys():
+    print(func.title() + ": " + glossary[func])

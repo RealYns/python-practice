@@ -1,11 +1,9 @@
-pizzas = ['minced meat', 'sea food', 'new york']
+pizza = {
+    'crust' : 'thick' ,
+    'toppings' : ['mushrooms', 'peppers', 'olive'] ,
+}
 
-friend_pizzas = pizzas[:]
+print("I ordered a " + pizza['crust'] + "-crust pizza with the following toppings:" )
 
-pizzas.append('alot of cheeses')
-
-friend_pizzas.append('pineapple')
-
-print(pizzas)
-
-print(friend_pizzas)
+for toppings in pizza['toppings']:
+    print("\t" + toppings.title())

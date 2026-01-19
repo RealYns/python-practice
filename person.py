@@ -1,11 +1,21 @@
 person = {
-    'first_name' : 'john' ,
-    'last_name' : 'smith' ,
-    'age' : '20' ,
-    'city' : 'frankfurt'
+    'eminence' : {
+        'first_name' : 'john' ,
+        'last_name' : 'smith' ,
+        'age' : 20 ,
+        'city' : 'frankfurt' ,
+    } ,
+    'alucard' : {
+        'first_name' : 'dracula' ,
+        'last_name' : 'the impaler' ,
+        'age' : 600 ,
+        'city' : 'london'
+    } ,
 }
 
-print(person['first_name'])
-print(person['last_name'])
-print(person['age'])
-print(person['city'])
+for persons, person_info in person.items():
+    print("Person: " + persons.title())
+    full_name = person_info[] + " " +
+
+
+
