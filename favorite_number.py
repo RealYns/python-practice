@@ -1,13 +1,12 @@
 favorite_numbers = {
-    'john' : 5 ,
-    'alex' : 96 ,
-    'jonas' : 9 ,
-    'a random new gen kid' : 67 ,
-    'velkoz' : 3.14 ,
+    'john' : [66, 45] ,
+    'alex' : [47, 52] ,
+    'jonas' : [9, 6, 69, 96] ,
+    'a random new gen kid' : [67, 69] ,
+    'velkoz' : [3.14] ,
 }
 
-print("John's favorite number is " + str(favorite_numbers['john']))
-print("Alex's favorite number is " + str(favorite_numbers['alex']))
-print("Jonas's favorite number is " + str(favorite_numbers['jonas']))
-print("A random new gen kid's favorite number is " + str(favorite_numbers['a random new gen kid']))
-print("Velkoz's favorite number is " + str(favorite_numbers['velkoz']))
+for name, nums in favorite_numbers.items():
+    print("\n" + name.title() + "'s numbers are:")
+    for num in nums:
+        print(num)
