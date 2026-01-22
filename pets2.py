@@ -1,7 +1,10 @@
-def describe_pet(which_animal, name):
+from shutil import which
+
+
+def describe_pet(name, which_animal):
 
     print("I have a " + which_animal.title() + "!")
     print("And his name is " + name.title() + "!\n")
 
-describe_pet('dog', 'floof')
-describe_pet('cat', 'rengar')
+
+describe_pet()
