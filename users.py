@@ -7,6 +7,7 @@ class User():
         self.email = email
         self.age = age
         self.country = country
+        self.login_attempts = 0
 
     def describe_user(self):
         print("\nFirst name:" + self.first_name.title())
@@ -31,9 +32,30 @@ class User():
     def greet_user(self):
         print("\nGreetings, " + self.first_name.title() + "!")
 
+    def increment_attempts(self):
+
+        self.login_attempts = self.login_attempts + 1
+
+        return self.login_attempts
+
+    def reset_login_attempts(self):
+
+        self.login_attempts = 0
+
+        return self.login_attempts
+
+
+
 user_0 = User('john', 'smith')
 user_0.describe_user()
 user_0.greet_user()
+print("login attempts: " + str(user_0.increment_attempts()))
+print("login attempts: " + str(user_0.increment_attempts()))
+print("login attempts: " + str(user_0.increment_attempts()))
+print("login attempts: " + str(user_0.increment_attempts()))
+print("login attempts: " + str(user_0.increment_attempts()))
+print("login attempts: " + str(user_0.reset_login_attempts()))
+
 
 user_1 = User('alucard', 'hellsing', 'alucardhellsing@gmail.com')
 user_1.describe_user()
