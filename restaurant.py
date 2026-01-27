@@ -23,20 +23,22 @@ class Restaurant():
 
         print("The number of customers that " + self.restaurant_name.title() + " has served: " + str(self.number_served))
 
-restaurant_0 = Restaurant('Urban Ember', 'Barbeque')
-print(restaurant_0.restaurant_name.title())
-print(restaurant_0.cuisine_type.title())
+if __name__ == "__main__":
 
-restaurant_0.describe_restaurant()
-restaurant_0.open_restaurant()
-restaurant_0.set_number_served(9)
-restaurant_0.increment_number_served(2)
+    restaurant_0 = Restaurant('Urban Ember', 'Barbeque')
+    print(restaurant_0.restaurant_name.title())
+    print(restaurant_0.cuisine_type.title())
 
-restaurant_1 = Restaurant('Saffron Garden', 'Indian cuisine')
-restaurant_1.describe_restaurant()
+    restaurant_0.describe_restaurant()
+    restaurant_0.open_restaurant()
+    restaurant_0.set_number_served(9)
+    restaurant_0.increment_number_served(2)
 
-restaurant_2 = Restaurant('La Piazza Verde', 'Italian cuisine')
-restaurant_2.describe_restaurant()
+    restaurant_1 = Restaurant('Saffron Garden', 'Indian cuisine')
+    restaurant_1.describe_restaurant()
 
-restaurant_3 = Restaurant('Golden Wok', 'Chinese cuisine')
-restaurant_3.describe_restaurant()
+    restaurant_2 = Restaurant('La Piazza Verde', 'Italian cuisine')
+    restaurant_2.describe_restaurant()
+
+    restaurant_3 = Restaurant('Golden Wok', 'Chinese cuisine')
+    restaurant_3.describe_restaurant()

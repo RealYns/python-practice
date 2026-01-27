@@ -14,7 +14,7 @@ class User():
         print("Last name:" + self.last_name.title())
 
         if self.email is not None:
-            print("Email: " + self.email.title())
+            print("Email: " + self.email)
         else:
             print("Email: Not provided")
 
@@ -44,23 +44,23 @@ class User():
 
         return self.login_attempts
 
+if __name__  == "__main__":
+
+    user_0 = User('john', 'smith')
+    user_0.describe_user()
+    user_0.greet_user()
+    print("login attempts: " + str(user_0.increment_attempts()))
+    print("login attempts: " + str(user_0.increment_attempts()))
+    print("login attempts: " + str(user_0.increment_attempts()))
+    print("login attempts: " + str(user_0.increment_attempts()))
+    print("login attempts: " + str(user_0.increment_attempts()))
+    print("login attempts: " + str(user_0.reset_login_attempts()))
 
 
-user_0 = User('john', 'smith')
-user_0.describe_user()
-user_0.greet_user()
-print("login attempts: " + str(user_0.increment_attempts()))
-print("login attempts: " + str(user_0.increment_attempts()))
-print("login attempts: " + str(user_0.increment_attempts()))
-print("login attempts: " + str(user_0.increment_attempts()))
-print("login attempts: " + str(user_0.increment_attempts()))
-print("login attempts: " + str(user_0.reset_login_attempts()))
+    user_1 = User('alucard', 'hellsing', 'alucardhellsing@gmail.com')
+    user_1.describe_user()
+    user_1.greet_user()
 
-
-user_1 = User('alucard', 'hellsing', 'alucardhellsing@gmail.com')
-user_1.describe_user()
-user_1.greet_user()
-
-user_2 = User('seras', 'victoria', age=20)
-user_2.describe_user()
-user_2.greet_user()
+    user_2 = User('seras', 'victoria', age=20)
+    user_2.describe_user()
+    user_2.greet_user()

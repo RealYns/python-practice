@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 glossary = {
     'For' : 'Used for looping, especially repeated tasks.' ,
     'If' : 'Used for conditions, if the condition is met, it does whatever is in the if statement.' ,
