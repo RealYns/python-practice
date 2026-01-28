@@ -1,0 +1,2 @@
+I learned alot of things in python such as how to make lists, dictionaries, classes, importing from other files.
+I also learned how to manipulate data and take data from the user.
